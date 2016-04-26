@@ -166,7 +166,6 @@ button[data-chart="3"] {
 }
 
 .chart-text {
-	visibility: hidden;
 	position: absolute;
 	width: 100%;
 }
@@ -180,6 +179,10 @@ button[data-chart="3"] {
 .chart-text p, .chart-text ul {
 	font-size: 15px;
 	text-align: left;
+}
+
+.hide {
+	visibility: hidden;
 }
 
 

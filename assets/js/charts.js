@@ -130,7 +130,12 @@ $(function () {
     var clearGraphs = function() {
         var chart = $('#chart').highcharts();
         for (i = 0; i < chart.series.length; i++) {
-            $(".chart-data").find("[data-chart='" + i + "']").css("visibility", "hidden");
+            var text = $(".chart-data").find("[data-chart='" + i + "']");
+            console.log(text);
+            if (!text.hasClass("hide")) {
+                text.addClass("hide");
+            }
+            // $(".chart-data").find("[data-chart='" + i + "']").css("visibility", "hidden");
             chart.series[i].hide();
         }
     };
@@ -141,7 +146,7 @@ $(function () {
         var topic = $(this).data("chart");
         var series = chart.series[topic];
 
-        $("div").find("[data-chart='" + topic + "']").css("visibility", "visible");
+        $("div").find("[data-chart='" + topic + "']").removeClass("hide");
         series.show();
     });
 
@@ -151,6 +156,7 @@ $(function () {
 
 
     // my attempt to automate setting the colors of buttons
+    // not sure why it didn't work
     // function() {
     //     $(".chart-button").css("background-color", 
     //        $('#chart').highcharts().series[$(this).data("chart")].color);
