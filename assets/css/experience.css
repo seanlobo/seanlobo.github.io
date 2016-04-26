@@ -1,0 +1,15 @@
+.table {
+	width: 50%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+body table, th, td {
+	border: solid 1px black;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+td, th {
+	padding: 15px;
+}

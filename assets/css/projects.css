@@ -1,0 +1,32 @@
+.year {
+	text-align: left;
+	border-bottom: medium solid black;
+}
+
+.element {
+	margin: 30px 0;
+	text-align: justify;
+	position: relative;
+	/*border-bottom: thin solid black;*/
+	overflow: auto;
+}
+
+.element img {
+	width: 100px;
+	border-radius: 50%;
+	margin: 0 20px;
+}
+
+.element p {
+	vertical-align: middle;
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}

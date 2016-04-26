@@ -2,17 +2,52 @@
 <html>
 	<head>
   		<link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-  		<title>Sean Lobo</title>
+  		<title>Sean Lobo - About</title>
 	</head>
 	<body>
+		<div class="nav-bar">
+			<div class="nav-element current"><a href="index.html">Home</a></div>
+			<div class="nav-element"><a href="projects.html">Projects</a></div>
+			<div class="nav-element"><a href="experience.html">Experience</a></div>
+			<div class="nav-element">Resume</div>
+			<div class="nav-element">Contact Me</div>
+		</div>
 		<div class="content">
-			<div class="nav-bar">
-				<div class="nav-element">Home</div>
-				<div class="nav-element">Projects</div>
-				<div class="nav-element">Experience</div>
-				<div class="nav-element">Resume</div>
-				<div class="nav-element">Contact Me</div>
+			<h1>About Me</h1>
+			<div class="about-me">
+				<div class="left">
+					<img src="assets/img/self-picture.jpg">
+				</div>
+				<div class="right">
+					<p>My name is Sean Lobo, and I'm an undergraduate studying Electrical Engineering and Computer
+						Science at UC Berkeley. Ever since getting into Computer Science my senior year of High
+						School, I've been completely hooked, and I love learning and applying new skills to solve
+						novel problems - I'm currently most interested in Computational Biology, but I'm interested in exploring other areas such as Big Data, AI/ Machine Learning, and The Internet of Things</p>
+				</div>
 			</div>
+			<p class="chart-intro">Since I've always been better at analyzing data than creative writing, below is a graphical representation for some of the aspects of my life that I find notable:</p>
+			
+			<div class="chart-area">
+				<div id="chart"></div>
+				<div class="chart-control">
+					
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="chart-button" data-chart="0">Computer Science</button>
+				<button class="chart-button" data-chart="1">Biology</button>
+				<button class="chart-button" data-chart="2">Smash</button>
+				<button class="chart-button" data-chart="3">Anime</button>
+			</div>
+
+
+			<footer></footer>
+
+
 		</div>
 	</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="assets/js/charts.js"></script>
+
 </html>
