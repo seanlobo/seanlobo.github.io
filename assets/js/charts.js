@@ -98,13 +98,16 @@ $(function () {
                 [Date.UTC(2015, 7), 40], // Senior year ends
                 [Date.UTC(2015, 9), 45],
                 [Date.UTC(2015, 11), 50],
+                [Date.UTC(2016, 0), 45],
                 [Date.UTC(2016, 1), 60],
-                [Date.UTC(2016, 3), 70],
+                [Date.UTC(2016, 2), 75],
+                [Date.UTC(2016, 3), 80],
             ]
         }, {
             name: 'Anime',
             color: "#536DFE",
             data: [
+                [Date.UTC(2013, 11), 0],
                 [Date.UTC(2014, 0), 0], // New years Junior year
                 [Date.UTC(2014, 1), 10],
                 [Date.UTC(2014, 2), 20],
@@ -127,20 +130,24 @@ $(function () {
     var clearGraphs = function() {
         var chart = $('#chart').highcharts();
         for (i = 0; i < chart.series.length; i++) {
+            $(".chart-data").find("[data-chart='" + i + "']").css("visibility", "hidden");
             chart.series[i].hide();
         }
     };
 
-    clearGraphs();
-    $('#chart').highcharts().series[0].show();
-
-
     $(".chart-button").click(function() {
         clearGraphs();
         var chart = $('#chart').highcharts();
-        var series = chart.series[$(this).data("chart")];
+        var topic = $(this).data("chart");
+        var series = chart.series[topic];
+
+        $("div").find("[data-chart='" + topic + "']").css("visibility", "visible");
         series.show();
     });
+
+
+    clearGraphs();
+    $('.buttons').find("[data-chart='0']").click();
 
 
     // my attempt to automate setting the colors of buttons

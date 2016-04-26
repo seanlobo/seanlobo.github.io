@@ -12,6 +12,7 @@ body {
 p {
 	line-height: 1.5;
 	font-size: 18px;
+	text-align: left;
 }
 
 .nav-element a {
@@ -77,6 +78,12 @@ h1 {
 	display: inline-block;
 }
 
+.all-chart {
+	background-color: blue;
+	height: 450px;
+	padding: 20px;
+}
+
 .chart-intro {
 	margin-bottom: 50px;
 }
@@ -86,19 +93,22 @@ h1 {
 	height: 400px;
 	display: block;
 	margin-bottom: 10px;
+	position: relative;
 }
 
 .buttons, #chart {
 	float: left;
-	width: 60%;
+	width: 575px;
 }
 
-.chart-control {
+.chart-data {
 	float: right;
 	width: 35%;
 	height: 100%;
 	margin-left: 20px;
-	background-color: yellow;
+	position: absolute;
+	right: 0;
+	/*background-color: yellow;*/
 }
 
 .buttons {
@@ -154,6 +164,24 @@ button[data-chart="2"] {
 button[data-chart="3"] {
 	background: #536DFE;
 }
+
+.chart-text {
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.chart-text h1 {
+	font-size: 25px;
+	margin-top: 0;
+	width: 100%;
+}
+
+.chart-text p, .chart-text ul {
+	font-size: 15px;
+	text-align: left;
+}
+
 
 footer {
 	margin-bottom: 20px;
