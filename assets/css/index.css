@@ -139,12 +139,12 @@ button:active {
 }
 
 button[data-chart="0"] {
-	background: #FE76A2;
+	background: #8BC34A;
 	color: white;
 }
 
 button[data-chart="1"] {
-	background: #8BC34A;
+	background: #33CCFF;
 }
 
 button[data-chart="2"] {
