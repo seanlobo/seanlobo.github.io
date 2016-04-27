@@ -1,6 +1,7 @@
 .table {
-	width: 50%;
+	width: 75%;
 	margin: 0 auto;
+	margin-top: 20px;
 	display: inline-block;
 }
 
@@ -37,12 +38,16 @@ body table, th, td {
 	margin: 0 auto;
 }
 
+table {
+	width: 100%;
+}
+
 td, th {
 	padding: 15px;
 }
 
 .actual-table {
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 

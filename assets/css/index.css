@@ -85,7 +85,7 @@ h1 {
 }
 
 .well-background {
-	/*background-color: rgb(245, 245, 245);*/
+	padding: 20px;
 	background-color: white;
 	border-radius: 10px;
 	border: solid 1px gray;
@@ -141,7 +141,7 @@ button:focus {
 
 button[data-chart="0"] {
 	background: #FE76A2;
-	color: black;
+	color: white;
 }
 
 button[data-chart="1"] {
@@ -150,10 +150,11 @@ button[data-chart="1"] {
 
 button[data-chart="2"] {
 	background: #0097A7;
-	color: black;
+	color: white;
 }
 
 button[data-chart="3"] {
+	color: white;
 	background: #536DFE;
 }
 
