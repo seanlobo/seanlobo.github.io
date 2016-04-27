@@ -4,6 +4,33 @@
 	display: inline-block;
 }
 
+h2, h3, p, ul, li {
+	text-align: left;
+}
+
+.information {
+	margin-bottom: 30px;
+}
+
+h1 {
+	margin-bottom: 0;
+	border-bottom: 1px solid black;
+}
+
+h2 {
+	margin-left: 60px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	font-weight: 500;
+}
+
+h3 {
+	margin-top: 0;
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
 body table, th, td {
 	border: solid 1px black;
 	border-collapse: collapse;
@@ -13,3 +40,10 @@ body table, th, td {
 td, th {
 	padding: 15px;
 }
+
+.actual-table {
+	margin-top: 20px;
+}
+
+
+

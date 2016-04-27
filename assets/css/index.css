@@ -7,6 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: "Open Sans";
+	text-align: left;
 }
 
 p {
@@ -79,9 +80,15 @@ h1 {
 }
 
 .all-chart {
-	background-color: blue;
 	height: 450px;
 	padding: 20px;
+}
+
+.well-background {
+	/*background-color: rgb(245, 245, 245);*/
+	background-color: white;
+	border-radius: 10px;
+	border: solid 1px gray;
 }
 
 .chart-intro {
@@ -111,36 +118,21 @@ h1 {
 	/*background-color: yellow;*/
 }
 
-.buttons {
-	margin-bottom: 20px;
-}
-
 button {
-  background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-  background-image: -o-linear-gradient(top, #3498db, #2980b9);
-  background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
-  font-family: "Open Sans";
-  color: #ffffff;
-  font-size: 13px;
-  padding: 10px 10px;
-  text-decoration: none;
-  width: 140px;
+	-webkit-border-radius: 9;
+	-moz-border-radius: 9;
+	border-radius: 9px;
+	font-family: "Open Sans";
+	color: #ffffff;
+	font-size: 13px;
+	padding: 10px 10px;
+	text-decoration: none;
+	width: 140px;
 }
 
 button:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
+	background: #3cb0fd;
+	text-decoration: none;
 }
 
 button:focus {
@@ -148,16 +140,16 @@ button:focus {
 }
 
 button[data-chart="0"] {
-	background: #FFC107;
+	background: #FE76A2;
 	color: black;
 }
 
 button[data-chart="1"] {
-	background: #0097A7;
+	background: #8BC34A;
 }
 
 button[data-chart="2"] {
-	background: #8BC34A;
+	background: #0097A7;
 	color: black;
 }
 

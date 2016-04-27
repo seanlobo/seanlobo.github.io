@@ -47,7 +47,7 @@ $(function () {
 
         series: [{
             name: 'Computer Science',
-            color: "#FFC107",
+            color: "#FE76A2",
             data: [
                 [Date.UTC(2014, 5), 0], // Start jcvi internship
                 [Date.UTC(2014, 6), 10],
@@ -68,7 +68,7 @@ $(function () {
             ]
         }, {
             name: 'Biology',
-            color: "#0097A7",
+            color: "#8BC34A",
             data: [
                 [Date.UTC(2011, 5), 20],
                 [Date.UTC(2012, 3), 20],
@@ -87,7 +87,7 @@ $(function () {
             ]
         }, {
             name: 'Smash',
-            color: "#8BC34A",
+            color: "#0097A7",
             data: [
                 [Date.UTC(2013, 7), 5], // Junior Year Starts
                 [Date.UTC(2014, 0), 15],
