@@ -130,13 +130,12 @@ button {
 	width: 140px;
 }
 
-button:hover {
-	background: #3cb0fd;
-	text-decoration: none;
-}
-
 button:focus {
 	outline: 0;
+}
+
+button:active {
+	opacity: .9;
 }
 
 button[data-chart="0"] {
